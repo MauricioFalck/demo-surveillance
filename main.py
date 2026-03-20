@@ -22,7 +22,7 @@ while cap.isOpened():
     if current_time - last_processed_time >= interval:
         last_processed_time = current_time
 
-        results = model(frame, classes=[0, 67], verbose=False)
+        results = model(frame, classes=[0], verbose=False)
 
         person_count = len(results[0].boxes)
         detected_ids = results[0].boxes.cls.tolist()
