@@ -16,6 +16,12 @@ Descarga el proyecto y luego instala las librerías necesarias ejecutando:
 pip install -r requirements.txt
 ```
 
+Dependiendo del sistema operativo, si falla el comando anterior:
+
+```bash
+pip3 install -r requirements.txt
+```
+
 Esto instalará:
 
 | Librería        | Descripción                                      |
@@ -25,12 +31,18 @@ Esto instalará:
 
 ## Cómo ejecutar el proyecto
 
-Desde el directorio del proyecto, ejecutá:
+Desde el directorio del proyecto:
 
 ```bash
 python main.py
 ```
 
-Se abrirá una ventana mostrando el video de la cámara con los objetos detectados resaltados. En la consola se imprimirá el número de personas detectadas por cada fotograma procesado.
+Dependiendo del sistema operativo, si falla el comando anterior:
 
-Para salir del programa, presioná la tecla **`q`** con la ventana de video en foco.
+```bash
+python3 main.py
+```
+
+Se abrirá una ventana mostrando el video de la cámara con stream de la webcam del computador y el numero de personas detectadas. En la consola se imprimirá el número de personas detectadas por cada fotograma procesado.
+
+Para salir del programa, presiona la tecla **`q`** con la ventana de video en foco.
